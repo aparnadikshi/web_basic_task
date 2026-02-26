@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="" method="get">
+        <fieldset>
+            <legend font="30px">Login form</legend>
+            <label for="fname">First Name:</label>
+            <input type="text" id="fname" placeholder="abc" name="name" />
+            <br /><br />
+            <label for="lname">Last Name:</label>
+            <input type="text" id="lname" placeholder="xyz" name="name" />
+            <br /><br />
+            <label for="phone">Phone:</label>
+            <input type="phone" id="phone" placeholder="1234567890" maxlenght="10" name="phone" />
+            <br /><br />
+            <label for="email">Email:</label>
+            <input type="email" id="email" placeholder="abc@gmail.com" required name="email" />
+            <br /><br />
+            <label for="password">password:</label>
+            <input type="password" id="password" placeholder="enter password" minlength="5" maxlength="10"
+                name="password" />
+            <br /><br />
+            <label for="date">Date:</label>
+            <input type="date" id="date" name="date" />
+            <br /><br />
+            <label for="age">Age:</label>
+            <input type="number" id="age" min="1" max="100" name="age" />
+            <br /><br />
+            <label for="file"> choose you File:</label>
+            <input type="file" id="file" accept=".pdf" />
+            <br /><br />
+            <label for="gender"> Gender: Male</label>
+            <input type="radio" id="gender" name="gender" value="male" />
+            <label for="gender"> Female</label>
+            <input type="radio" id="gender" name="gender" value="female" />
+            <label for="gender"> Others</label>
+            <input type="radio" id="gender" name="gender" value="others" />
+            <br /><br />
+            <label for="">Range</label>
+            <input type="range" id="range" />
+            <br /><br />
+            <label for="">Skills:</label>
+            <input type="checkbox" checked>
+            <label for="">Cloud</label>
+            <br /><br />
+            <input type="checkbox">
+            <label for="">Java</label>
+            <br /><br />
+            <input type="checkbox">
+            <label for="">Python</label>
+            <br /><br />
+            <label for="">city</label>
+            <select name="city" id="">
+                <option select a option hidden>select the city</option>
+                <optgroup label="West Bengal">
+                    <option>Haldia</option>
+                    <option>Kolkata</option>
+                    <option>Howrah</option>
+                    <option>Tamluk</option>
+                </optgroup>
+                <optgroup label="Andhra Pradesh">
+                    <option>Vishakapatanam</option>
+                    <option>Guntur</option>
+                    <option>Kakinada</option>
+                    <option>Rajamundry</option>
+                </optgroup>
+            </select>
+            <br /><br />
+            <label>Feedback:</label>
+            <textarea></textarea>
+            <br /><br />
+            <button>
+                submit
+            </button>
+            <br /><br />
+            <button>
+                Reset
+            </button>
+    </form>
+    </fieldset>
+</body>
+
+</html>
