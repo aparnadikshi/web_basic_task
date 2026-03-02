@@ -1,0 +1,95 @@
+h1 {
+    margin-bottom: 30px;
+    font-size: 32px;
+    color: #29011b;
+
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: rgb(97, 9, 88);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    background-color: rgb(169, 126, 209);
+}
+
+button {
+    padding: 8px 14px;
+    border: none;
+    border-radius: 6px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+#addBtn {
+    background-color: #7b3260;
+    border: black;
+}
+
+.edit-btn {
+    background-color: #a24580;
+}
+
+#addBtn:hover {
+    background-color: #4b1f3b;
+}
+
+#title,
+#amount,
+#category {
+    width: 60%;
+    padding: 10px;
+    margin-bottom: 12px;
+    border: 2px solid black;
+    border-radius: 20px;
+}
+
+#search {
+    width: 260px;
+    padding: 2px;
+    border: 2px solid rgb(69, 1, 58);
+    background-color: #f8c2e4;
+    border-radius: 3%;
+    color: #29011b
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: plum;
+}
+
+
+th {
+    color: rgb(255, 176, 248);
+    padding: 13px;
+}
+
+table td {
+    padding: 12px;
+    text-align: center;
+}
+
+table th {
+    background: rgb(104, 44, 98);
+}
+
+tbody tr:nth-child(even) {
+    background-color: rgb(198, 124, 190);
+}
+
+/* 
+.action-btns button {
+    margin-right: 15px;
+} */
