@@ -1,0 +1,148 @@
+/* ---- BASIC RESET ---- */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* ---- PAGE CENTER ---- */
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    background: #f6f8fa;
+}
+
+/* ---- MAIN CONTAINER ---- */
+.container {
+    width: 90%;
+    max-width: 1000px;
+    text-align: center;
+}
+
+/* ---- HEADING ---- */
+h2 {
+    margin-bottom: 20px;
+    font-size: 32px;
+    color: #333;
+}
+
+/* ---- BUTTON STYLING ---- */
+button {
+    padding: 8px 14px;
+    border: none;
+    border-radius: 6px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+/* Add Resident / Update button */
+#showAddFormBtn,
+#addBtn {
+    background-color: #3b82f6;
+    color: white;
+}
+
+#showAddFormBtn:hover,
+#addBtn:hover {
+    background-color: #1d4ed8;
+}
+
+/* Cancel button */
+#cancelBtn {
+    background-color: #d1d5db;
+}
+
+#cancelBtn:hover {
+    background-color: #9ca3af;
+}
+
+/* Edit button */
+.edit-btn {
+    background-color: #10b981;
+    /* green */
+    color: white;
+}
+
+.edit-btn:hover {
+    background-color: #0f6348;
+}
+
+/* Delete button */
+.delete-btn {
+    background-color: #ef4444;
+    /* red */
+    color: white;
+}
+
+.delete-btn:hover {
+    background-color: #8c0606;
+}
+
+/* ---- ADD FORM ---- */
+#addForm {
+    background: white;
+    border: 1px solid #ddd;
+    padding: 20px;
+    width: 350px;
+    margin: 20px auto;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#addForm input,
+#addForm select {
+    width: 95%;
+    padding: 10px;
+    margin-bottom: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* ---- SEARCH BAR ---- */
+#search {
+    width: 250px;
+    padding: 10px;
+    margin: 20px 0;
+    border: 1px solid #00030c;
+    border-radius: 5px;
+}
+
+/* ---- TABLE ---- */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+th {
+    background-color: #3b82f6;
+    color: white;
+    padding: 12px;
+    font-size: 16px;
+}
+
+td {
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Zebra rows */
+tbody tr:nth-child(even) {
+    background-color: #f1f5f9;
+}
+
+/* Center text */
+td,
+th {
+    text-align: center;
+}
+
+/* ---- HIDDEN CLASS ---- */
+.hidden {
+    display: none;
+}

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h2>Hostel Management</h2>
+        <button id="showAddFormBtn">Add Resident</button>
+        <!-- add resident form -->
+        <div id="addForm" class="hidden">
+            <h3>Add New Resident</h3>
+            <input type="text" id="name" placeholder="Name">
+            <input type="number" id="age" placeholder="Age">
+            <input type="text" id="phone" placeholder="Phone">
+            <!-- ROOM DROPDOWN -->
+            <select id="roomSelect">Room Number</select>
+            <input type="text" id="checkin" placeholder="Check-in Date">
+            <button id="addBtn">Add</button>
+            <button id="cancelBtn">Cancel</button>
+        </div>
+        <!-- search bar -->
+        <input type="text" id="search" placeholder="Search">
+        <!-- RESIDENT TABLE -->
+        <table id="residentTable">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Age</th>
+                    <th>Phone</th>
+                    <th>Room</th>
+                    <th>Check-in</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+        <!-- TEMPLATE FOR ONE RESIDENT ROW -->
+        <template id="residentRowTemplate">
+            <tr>
+                <td class="res-name"></td>
+                <td class="res-age"></td>
+                <td class="res-phone"></td>
+                <td class="res-room"></td>
+                <td class="res-checkin"></td>
+                <td>
+                    <button class="edit-btn">Edit</button>
+                    <button class="delete-btn">Delete</button>
+                </td>
+            </tr>
+        </template>
+        <script src="./dist/app.js" type="module"></script>
+    </div>
+</body>
+
+</html>
